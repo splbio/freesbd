@@ -1,11 +1,17 @@
 Redesign
 ============
 
-To Run:
+To build:
 ```bash
 git clone https://github.com/claudiay/freesbd.git
 cd freesbd/
 sh setup.sh
+```
+
+To run the site:
+```bash
+cd freesbd/
+sh runsite.sh --debug [--host '*'] [--port 8080]
 ```
 
 Translations:
