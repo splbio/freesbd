@@ -26,6 +26,5 @@ fi
 #fi
 
 echo "Setup is done!"
-echo "Starting up..."
-. env/bin/activate && python website/site.py
+echo "Now run ./runsite.sh to run the website"
 
