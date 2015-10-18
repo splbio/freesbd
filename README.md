@@ -4,8 +4,8 @@ Redesign
 To Run:
 ```bash
 git clone https://github.com/claudiay/freesbd.git
-cd freebsdorg/
-bash setup.sh
+cd freesbd/
+sh setup.sh
 ```
 
 Translations:
