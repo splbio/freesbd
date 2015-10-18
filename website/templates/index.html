@@ -29,22 +29,31 @@
   <div class ="row main-products">
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='pcbsd') }}">{% trans %}Desktop{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>{% trans %}PC-BSD is a user-friendly operating system based on FreeBSD. Harnessing all the tools powerful tools of FreeBSD into an easy to use and install system.{% endtrans %}</p>
+        <h2>{% trans %}Desktop{% endtrans %}</h2>
+	<p><h3><a href="{{ url_for('simple_install', distro='pcbsd') }}">PC-BSD<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h3>{% trans %} A user-friendly operating system based on FreeBSD. Harnessing all the tools powerful tools of FreeBSD into an easy to use and install system.{% endtrans %}</p>
+	<hr>
+	<p><a href="{{ url_for('simple_install', distro='midnightbsd') }}"><h3>MightnightBSD<span class="pull-right glyphicon glyphicon-chevron-right"></span></h3></a>{% trans %} MidnightBSD is a new BSD-derived operating system developed with desktop users in mind. It includes all the software you'd expect for your daily tasks - email, web browsing, word processing, gaming, and much more.{% endtrans%}</p>
       </div>
     </div>
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='freebsd10-0') }}">{% trans %}Server{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>{% trans %}Its advanced networking, security and storage features have made FreeBSD the platform of choice for many of the busiest web sites.{% endtrans %}</p>
-        <p>{% trans %}It is easy to setup and running on your personal hardware, or even skipping that step by hosting your web applications in the cloud.{% endtrans %}</p>
+	  <h2>{% trans %}Server{% endtrans %}</h2>
+	  <p>{% trans %}Get the base FreeBSD system YOU get to customize.{% endtrans %}</p>
+	  <h3><a href="{{ url_for('simple_install', distro='freebsd-hw') }}">{% trans %}Hardware{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+	  <p>{% trans %}Install this on a hardware system and then customize it to your specific requirements.{% endtrans %}</p>
+	  <hr>
+	  <h3><a href="{{ url_for('simple_install', distro='freebsd-vm') }}">{% trans %}Virtual{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+	  <p>{% trans %}Pick your virtual environment, ESXi, Virtualbox, Xen or other.{% endtrans %}</p>
+	  <hr>
+
       </div>
     </div>
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='freenas') }}">{% trans %}Appliance{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>{% trans %}FreeNAS is really cool, but I have no idea why they decided to use dojango.{% endtrans %}</p>
-        <p>{% trans %}Probably for the same reason the FreeBSD.org website looks the way it does.{% endtrans%}</p>
+        <h2>{% trans %}Appliances{% endtrans %}</h2>
+	<p><a href="{{ url_for('simple_install', distro='freenas') }}"><h3>FreeNAS<span class="pull-right glyphicon glyphicon-chevron-right"></span></h3></a>{% trans %} is a powerful NAS solution that supports NFS, CIFS, VMware.{% endtrans%}</p>
+	<hr>
+	<p><a href="{{ url_for('simple_install', distro='pfsense') }}"><h3>pfSense<span class="pull-right glyphicon glyphicon-chevron-right"></span></h3></a>{% trans %} is a powerful firewall and VPN that is available free to download{% endtrans%}</p>
       </div>
     </div>
     <div class="col-md-3 last">
