@@ -38,7 +38,7 @@
     <div class="col-md-3">
       <div class="details">
 	  <h2>{% trans %}Server{% endtrans %}</h2>
-	  <p>{% trans %}Get the base FreeBSD system YOU get to customize.{% endtrans %}</p>
+	  {# comment %}<p>{% trans %}Get the base FreeBSD system YOU get to customize.{% endtrans %}</p>{% endcomment #}
 	  <h3><a href="{{ url_for('simple_install', distro='freebsd-hw') }}">{% trans %}Hardware{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
 	  <p>{% trans %}Install this on a hardware system and then customize it to your specific requirements.{% endtrans %}</p>
 	  <hr>

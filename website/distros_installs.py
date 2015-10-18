@@ -30,10 +30,16 @@ distros_installs = {
         ],
         'downloads' : [
             {
-                'url': "http://www.pcbsd.org/en/about/",
-                'name': 'PCBSD 1000',
-                'version': '1000',
-                'date': '07/03/14'
+                'url': "http://download.pcbsd.org/iso/10.2-RELEASE/amd64/PCBSD10.2-RELEASE-08-19-2015-x64-DVD-USB.iso",
+                'name': 'PCBSD ISO Direct Download',
+                'version': '10.2-RELEASE',
+                'date': '08/19/15'
+            },
+            {
+                'url': "http://download.pcbsd.org/iso/10.2-RELEASE/amd64/PCBSD10.2-RELEASE-08-19-2015-x64-DVD-USB.iso.torrent",
+                'name': 'PCBSD ISO Torrent',
+                'version': '10.2-RELEASE',
+                'date': '08/19/15'
             },
         ]
     },

@@ -16,9 +16,10 @@
                     <p>{{ distro.about }}</p>
                 </div>
                 <div class="col-md-4">
-                    <form class="form" role="form">
+                    <form class="form" role="form" method="post">
+			<input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <select class="form-control" name="download_url">
+			    <select id="download_select" class="form-control" name="download_url">
                                 {% for download in distro.downloads %}
                                 {{donwload}}
                                 <option value="{{ download.url }}">{{ download.name }}</option>
@@ -26,7 +27,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default btn-lg btn-block">Download</button>
+                            <button id="download_button" type="submit" class="btn btn-default btn-lg btn-block">Download</button>
                         </div>
                     </form>
                 </div>
@@ -79,6 +80,10 @@
 {% block js %}
 <script type="text/javascript">
   $('.collapse').collapse()
+  $('#download_button').click(function(e) {
+	e.preventDefault();  //stop the browser from following
+	window.location.href = $( "#download_select" ).val();
+  });
 </script>
 {% endblock %}
 
